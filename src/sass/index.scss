@@ -1,4 +1,17 @@
+// fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&family=Montserrat:wght@400..500&display=swap');
+
 @import './common';
 @import './example';
+=======
+
+// utilities
+@import './utilities/variables';
+
+
+// components
+@import './components/containers';
+@import './components/sectionTitles';
+@import './components/about-us';
 @import './components/header'
+
