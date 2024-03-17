@@ -7,6 +7,29 @@ body {
     line-height: 1.2;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-left {
+    text-align: left;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     list-style: none;
     padding-left: 0;
