@@ -13,4 +13,15 @@ document.addEventListener("DOMContentLoaded", function() {
       readMoreButton.querySelector("span").textContent = "Less";
     }
   });
+ 
+  const openMenuBtn = document.querySelector("[data-menu-open]");
+  const closeMenuBtn = document.querySelector("[data-menu-close]");
+  const menu = document.querySelector("[data-menu]");
+
+  openMenuBtn.addEventListener("click", ToggleMenu);
+  closeMenuBtn.addEventListener("click", ToggleMenu);
+
+  function ToggleMenu() {
+    menu.classList.toggle("is-open");
+  }
 });
