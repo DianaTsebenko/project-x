@@ -1,5 +1,13 @@
 @import '../utilities/variables';
 
+.container.speakers {
+    padding-bottom: 40px;
+
+    .section-titles {
+        margin-bottom: 12px;
+    }
+}
+
 .speakers-list {
     display: flex;
     flex-wrap: wrap;
@@ -7,13 +15,14 @@
     column-gap: 20px;
 
     .speaker {
-        max-width: calc((100% - 20px) / 2);
+        width: calc((100% - 20px) / 2);
 
         img {
             width: 100%;
         }
 
         &-title {
+            margin: 12px 0;
             color: $main_text_color;
             text-align: center;
             font-family: $main_text;
@@ -23,6 +32,7 @@
         }
 
         &-position {
+            margin: 0;
             color: $main_text_color;
             text-align: center;
             font-family: $main_text;
