@@ -2,12 +2,28 @@
 
 
 header {
-    background-image: url('../images/glazed-donuts-in-boxes-copy-space1.png');
+    background-image: url('../images/glazed-donuts-in-boxes-copy-space.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     min-height: 312px;
     background-position: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+        background-image: url('../images/glazed-donuts-in-boxes-copy-space_tablet.png');
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+        min-height: 345px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url('../images/glazed-donuts-in-boxes-copy-space_desktop.png');
+        min-height: 556px;
+        margin-bottom: 64px;
+    }
 }
 
 .header {
@@ -15,54 +31,100 @@ header {
     position: relative;
     margin-bottom: 20px;
 
+    @media screen and (min-width:768px) {
+        padding-top: 24px;
+        margin-bottom: 28px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 36px;
+        margin-bottom: 65px;
+
+    }
+
     &-logo {
         width: 108px;
         height: 50px;
-    }
 
-    .menu-btn {
-        position: absolute;
-        top: 16px;
-        right: 20px;
-        background-color: transparent;
-        border-color: transparent;
-    }
-
-    .menu-container {
-        display: none;
-
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: $background_color;
-        padding: 16px 20px;
-
-        width: 100%;
-        height: 100%;
-
-        &.is-open {
-            display: block;
+        @media screen and (min-width:1200px) {
+            width: 158px;
+            height: 70px;
         }
+    }
 
-        .menu-btn-close {
+    @media screen and (max-width: 1199px) {
+        .menu-btn {
             position: absolute;
             top: 16px;
             right: 20px;
             background-color: transparent;
             border-color: transparent;
+
+            @media screen and (min-width:768px) {
+                top: 24px;
+                right: 32px;
+            }
+        }
+
+        .menu-container {
+
+
+
+            display: none;
+
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: $background_color;
+            padding: 16px 20px;
+
+            @media screen and (min-width:768px) {
+                padding: 24px 32px;
+            }
+
+            width: 100%;
+            height: 100%;
+
+            &.is-open {
+                display: block;
+            }
+
+            .menu-btn-close {
+                position: absolute;
+                top: 16px;
+                right: 20px;
+                background-color: transparent;
+                border-color: transparent;
+
+                @media screen and (min-width:768px) {
+                    top: 24px;
+                    right: 32px;
+                }
+            }
+
         }
     }
 }
 
 .navigation {
+    margin: 46px 0 0 0;
+
+    @media screen and (min-width:768px) {
+        margin-top: 70px;
+    }
 
     &-item {
-        margin: 0 auto 40px auto;
+        margin: 0 auto 20px auto;
         width: 174px;
         padding: 10px 0;
         text-align: center;
         color: $main_text_color;
+
+        @media screen and (min-width:768px) {
+            width: 225px;
+            margin-bottom: 40px;
+        }
 
         &:hover,
         &:focus {
@@ -86,20 +148,37 @@ header {
         color: currentColor;
         font-size: 28px;
         font-weight: 500;
-        line-height: 1.2;
+
+        @media screen and (min-width:768px) {
+            font-size: 40px;
+        }
     }
 
 }
 
 .hero {
     &-title {
-        margin: 0 0 18px 0;
+        margin: 0 auto 18px auto;
         text-align: center;
         font-family: $secondary_text;
         color: $main_text_color;
         font-size: 28px;
         font-weight: 600;
         letter-spacing: -0.84px;
+        width: 280px;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            font-size: 30px;
+            margin: 0 auto 10px 0;
+            width: 319px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 60px;
+            margin-bottom: 20px;
+            width: 757px;
+        }
     }
 
     &-subtitle {
@@ -108,6 +187,16 @@ header {
         font-family: $secondary_text;
         font-size: 16px;
         font-weight: 500;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 24px;
+            margin-bottom: 28px;
+        }
     }
 }
 
@@ -121,6 +210,14 @@ header {
     border-color: transparent;
     box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
     color: $white_text_color;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 auto 20px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 32px;
+    }
 
     &:hover {
         background-color: $white_text_color;
@@ -146,6 +243,11 @@ header {
     margin: 0;
     margin-bottom: 8px;
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 43px;
+        justify-content: flex-start;
+    }
+
     &-icon {
         fill: $main_text_color;
     }
@@ -154,4 +256,41 @@ header {
     &-item:focus .social-media-icon {
         fill: $button_color;
     }
+}
+
+
+// Desktop
+@media screen and (min-width:1200px) {
+
+    .menu-btn,
+    .menu-btn-close,
+    .header-logo.menu {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation {
+        margin: 0 0 0 55px;
+        display: flex;
+        column-gap: 4px;
+
+        &-link {
+
+            font-size: 18px;
+
+        }
+
+        &-item {
+            margin: 0;
+            width: auto;
+            padding: 4px 8px;
+            text-align: center;
+        }
+
+    }
+
 }
