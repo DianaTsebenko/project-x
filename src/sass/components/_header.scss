@@ -1,0 +1,157 @@
+@import '../utilities/variables';
+
+
+header {
+    background-image: url('../images/glazed-donuts-in-boxes-copy-space1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 312px;
+    background-position: center;
+}
+
+.header {
+    padding-top: 16px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &-logo {
+        width: 108px;
+        height: 50px;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .menu-container {
+        display: none;
+
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $background_color;
+        padding: 16px 20px;
+
+        width: 100%;
+        height: 100%;
+
+        &.is-open {
+            display: block;
+        }
+
+        .menu-btn-close {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+}
+
+.navigation {
+
+    &-item {
+        margin: 0 auto 40px auto;
+        width: 174px;
+        padding: 10px 0;
+        text-align: center;
+        color: $main_text_color;
+
+        &:hover,
+        &:focus {
+            background-image: $button_gradient;
+            color: $white_text_color;
+            box-shadow: $button_shadow;
+        }
+    }
+
+    // &-item:first-child::after {
+    //     content: ' ';
+    //     display: block;
+    //     width: 78px;
+    //     height: 78px;
+    //     transform: rotate(90deg);
+    //     fill: rgba(214, 131, 98, 0.17);
+    // }
+
+    &-link {
+        font-family: $secondary_text;
+        color: currentColor;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+}
+
+.hero {
+    &-title {
+        margin: 0 0 18px 0;
+        text-align: center;
+        font-family: $secondary_text;
+        color: $main_text_color;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.84px;
+    }
+
+    &-subtitle {
+        margin: 0 0 28px 0;
+        text-align: center;
+        font-family: $secondary_text;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.btn-register {
+    display: block;
+    margin: 0 auto 28px auto;
+    width: 145px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: $button_color;
+    border-color: transparent;
+    box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+    color: $white_text_color;
+
+    &:hover {
+        background-color: $white_text_color;
+        color: $button_color;
+        border: 1px solid $button_color;
+    }
+
+    &:focus {
+        box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45), 0px 4px 4px 0px rgba(107, 66, 66, 0.25) inset;
+    }
+
+    .btn-text {
+        color: currentColor;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+.social-media {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 8px;
+
+    &-icon {
+        fill: $main_text_color;
+    }
+
+    &-item:hover .social-media-icon,
+    &-item:focus .social-media-icon {
+        fill: $button_color;
+    }
+}
