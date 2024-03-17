@@ -1,0 +1,44 @@
+@import '../utilities/variables';
+
+.container.speakers {
+    padding-bottom: 40px;
+
+    .section-titles {
+        margin-bottom: 12px;
+    }
+}
+
+.speakers-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    .speaker {
+        width: calc((100% - 20px) / 2);
+
+        img {
+            width: 100%;
+        }
+
+        &-title {
+            margin: 12px 0;
+            color: $main_text_color;
+            text-align: center;
+            font-family: $main_text;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        &-position {
+            margin: 0;
+            color: $main_text_color;
+            text-align: center;
+            font-family: $main_text;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+    }
+}
