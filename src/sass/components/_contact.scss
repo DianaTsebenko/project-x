@@ -1,0 +1,71 @@
+.contact-section {
+    .section-titles {
+        margin-bottom: 27px;
+    }
+}
+
+.contact {
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 16px;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 27px;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+    }
+
+    &-input {
+        height: 20px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #000;
+        margin-bottom: 20px;
+        color: rgba(0, 0, 0, 0.50);
+        outline: none;
+        background-color: transparent;
+        font-size: 16px;
+
+        @media screen and (min-width:768px) {
+            width: 336px;
+            margin-bottom: 18px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 394px;
+            margin-bottom: 16px;
+        }
+
+        &.question {
+            margin-bottom: 28px;
+
+            @media screen and (min-width:1200px) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+
+    .btn-send {
+        margin-bottom: 28px;
+
+        @media screen and (min-width:768px) {
+            margin: 0 auto 31px auto;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 37px;
+        }
+    }
+}

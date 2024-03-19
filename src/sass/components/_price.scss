@@ -37,14 +37,14 @@
 
 .price-item {
     padding: 20px 8px;
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 25px;
     background: #FAFBFB;
     box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
     background-image: url('../images/colorful-and-tasty-donuts.png');
     background-repeat: no-repeat;
-    background-position: right 40px bottom 104px;
+    background-position: right 50% bottom 104px;
 
     @media screen and (min-width:768px) {
         width: calc((100% - 28px)/3);

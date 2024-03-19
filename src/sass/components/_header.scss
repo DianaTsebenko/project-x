@@ -201,15 +201,7 @@ header {
 }
 
 .btn-register {
-    display: block;
     margin: 0 auto 28px auto;
-    width: 145px;
-    height: 40px;
-    border-radius: 25px;
-    background-color: $button_color;
-    border-color: transparent;
-    box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
-    color: $white_text_color;
 
     @media screen and (min-width: 768px) {
         margin: 0 auto 20px 0;
@@ -219,21 +211,6 @@ header {
         margin-bottom: 32px;
     }
 
-    &:hover {
-        background-color: $white_text_color;
-        color: $button_color;
-        border: 1px solid $button_color;
-    }
-
-    &:focus {
-        box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45), 0px 4px 4px 0px rgba(107, 66, 66, 0.25) inset;
-    }
-
-    .btn-text {
-        color: currentColor;
-        text-align: center;
-        font-size: 18px;
-    }
 }
 
 .social-media {
