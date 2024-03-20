@@ -1,4 +1,14 @@
 .contact-section {
+    padding-bottom: 27px;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 31px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 37px;
+    }
+
     .section-titles {
         margin-bottom: 27px;
     }
