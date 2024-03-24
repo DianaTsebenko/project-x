@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const readMoreButton = document.querySelector(".about_read_more");
+  const readMoreButton = document.querySelector(".program_read_more");
   const hiddenText = document.getElementById("hidden-text");
 
   readMoreButton.addEventListener("click", function() {
