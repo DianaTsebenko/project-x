@@ -10,7 +10,7 @@ $(".carousel").slick({
     focusOnSelect: true,
     variableWidth: true,
     asNavFor: ".review",
-    centerPadding: "0px", // Забирає padding, який додає Slick.js
+    centerPadding: "0px", 
     responsive: [
     {
         breakpoint: 768,
@@ -36,7 +36,7 @@ $(".carousel").slick({
 });
 $(".review").slick({
     asNavFor: ".carousel",
-    dots: false,
+    dots: true,
     arrows: false,
     adaptiveHeight: true,
     infinite: true,
@@ -44,7 +44,6 @@ $(".review").slick({
     slidesScroll: 1,
 });
 
-// Додає клас expanded до активного елемента для згортання вниз
 $(".carousel").on(
     "beforeChange",
     function (event, slick, currentSlide, nextSlide) {
